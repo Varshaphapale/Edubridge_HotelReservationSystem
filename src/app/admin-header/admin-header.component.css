@@ -1,0 +1,40 @@
+.navbar-nav {
+    padding-top: 10px;
+    padding-left: 50px;
+
+}
+
+.container {
+    background-color: #734d26;
+    color: white
+}
+
+.image {
+    padding-left: 130px;
+    padding-right: 130px
+}
+
+.gallary {
+    padding-left: 130px;
+}
+
+.gallary2 {
+    padding-left: 130px;
+}
+
+.map {
+    padding-left: 110px;
+
+}
+
+.navbar {
+    background-color: #734d26;
+}
+
+.nav-link {
+    color: white;
+}
+
+.form-group1 {
+    padding-left: 750px;
+}

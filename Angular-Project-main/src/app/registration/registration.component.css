@@ -1,0 +1,20 @@
+/* section{
+    background-image: url("assets/login.jpg");
+} */
+h3{
+    background-color: #734d26;
+    /* background-color: rgb(48, 48, 125); */
+    color: white;
+}
+.card{
+    /* border: none; */
+    margin-top: 2%;
+   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button,button:hover{
+    margin-left:40%;
+    background-color: #734d26;
+    /* background-color: rgb(48, 48, 125); */
+    color: white;
+}

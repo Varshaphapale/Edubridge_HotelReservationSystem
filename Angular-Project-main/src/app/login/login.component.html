@@ -1,0 +1,111 @@
+
+<div class= "container p-3 col-md-4 offset-md-4 border">
+    <div class="header text-center"><h3>Login</h3></div>
+    <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+    <label><i class="fa fa-user">&nbsp;User Name</i></label>
+    <input type="text" class="form-control" [(ngModel)]="userName" name="userName" id="userName" required><br>
+    
+    <label><i class="fa fa-eye">&nbsp;Password</i></label><br>
+    <input type="password" class="form-control" id="userPassword" [(ngModel)]="userPassword" name="userPassword" required><br>
+    </div>
+    
+    <div class="form-group1 col-sm-offset-md-3">
+    <button (ngSubmit)="onSubmit()" type="submit" id="btnsubmit" class="btn btn-success mx-5"><i class="fa fa-check" >  Login </i> </button>
+    
+    <button type="reset" id="btnreset" class="btn btn-danger"> <i class="fa fa-refresh" > Reset </i> </button><br>
+    
+    </div>
+    <a class="backpage" href="customerHeader.html" > Go next</a>
+    </form>
+    </div>
+    <div class="error-message" *ngIf="invalidCredentials">
+        Invalid username or password
+        <br><br>
+      </div>
+
+
+
+
+
+
+
+
+      <!-- 
+        <section>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-xl-1">
+            
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                
+                <div>
+                    <img src="assets/baaplogo.jpg">
+                    <h3 class="l1 text-center mb-2">Welcome Back</h3>
+                </div>
+                <button class="btn btn-lg btn-block"
+                    style="background-color: hsl(10, 11%, 89%);padding-left: 3rem; padding-right:6rem;"
+                    type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
+                        class="bi bi-google" viewBox="0 0 16 16">
+                        <path
+                            d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                    </svg> &nbsp;Log in with google</button>
+
+                <div class="divider d-flex align-items-center my-4">
+                    <p class="text-center fw-bold mx-3 mb-0">OR LOGIN WITH EMAIL</p>
+                </div>
+
+              
+                <div class="form-outline mb-4">
+                    <input type="email" id="form3Example3" class="form-control form-control-lg" formControlName="email"
+                        placeholder="Enter a valid email address"
+                        [ngClass]="{ 'is-invalid': submitted && f.email.errors }" required>
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                        <div *ngIf="f.email.errors.required">Email is required</div>
+                        <div *ngIf="f.email.errors.pattern">Enter valid email</div>
+                    </div>
+
+
+                </div>
+
+              
+                <div class="form-outline mb-3">
+                    <input type="password" id="form3Example4" class="form-control form-control-lg"
+                        formControlName="password" placeholder="Enter password"
+                        [ngClass]="{ 'is-invalid': submitted && f.password.errors }" required>
+                    <div  *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                        <div *ngIf="f.password.errors.required">Password is required</div>
+                        <div *ngIf="f.password.errors.pattern">Enter valid password</div>
+                        <div *ngIf="f.password.errors.minlength">Minimum 8 characters required</div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                   
+                    <div class="form-check mb-0">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                        <label class="form-check-label" for="form2Example3">
+                            Remember me
+                        </label>
+                    </div>
+                    <a>Forgot password?</a>
+                </div>
+
+                <div class="text-center text-lg-start mt-4 pt-2">
+                    <button type="submit" class="btn btn1 btn-lg w-100"
+                       (ngSubmit)="onSubmit()">Login</button>
+
+                    <p class=" fw-bold mt-3 pt-1  ml-3 mb-0" style="padding-left: 4rem;">Don't have an account? <a
+                            href="/signup">Sign up</a></p>
+                </div>
+               
+                
+            </form>
+           
+        </div>
+     
+   </div>
+   </div>
+</section>
+       -->
+    

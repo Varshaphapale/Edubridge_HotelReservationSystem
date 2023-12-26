@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-sm  navbar-dark">
+
+    <ul class="navbar-nav">
+        <li class="nav item">&nbsp;&nbsp;&nbsp;
+            <a class="nav-link" href="view-room">View Rooms</a>
+
+        </li>
+
+       
+        <div class="form-group1 col-sm-offset-md-3">
+            <button type="submit" id="btnsubmit" class="btn btn-success" (click)="goToHome()"><i class="fa fa-user"> Logout </i> </button>
+        </div>
+
+    </ul>
+</nav>
+<h2 id="a">Room List</h2>
+<form>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th> roomType</th>
+            <th>total Rooms</th>
+            <th>cost</th>
+            <th> available Rooms</th>
+             <th> room Rating</th>    
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of room">
+            <td><img src="./assets/room1.jpg"></td>
+            <td>{{user.roomType}}</td>
+            <td>{{user.totalRooms}}</td>
+            <td>{{user.cost}}</td>
+            <td>{{user.availableRooms}}</td>
+            <td>{{user.roomRating}}</td>
+            <td>
+                <button type="submit" (click)="Rooms(user.roomId)" class="btn btn-lg mb-2">Book Room</button>
+            </td>
+        </tr>
+        
+    </tbody>
+</table> 
+</form>

@@ -1,0 +1,40 @@
+<h2 id="a">BookRoom List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>userEmail</th>
+            <th> roomId</th>
+            <th>cost</th>
+            <th> paymentMethod</th>
+             <th> debitCardNumber</th>
+             <th> cvv</th>
+             <th>bankName</th>
+             <th> bankAccountHolderName</th>
+             <th> accountNumber</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of bookroom">
+            <td>{{user.userEmail}}</td>
+            <td>{{user.roomId}}</td>
+            <td>{{user.cost}}</td>
+            <td>{{user.paymentMethod}}</td>
+            <td>{{user.debitCardNumber}}</td>
+            <td>{{user.cvv}}</td>
+            <td>{{user.bankName}}</td>
+            <td>{{user.bankAccountHolderName}}</td>
+            <td>{{user.accountNumber}}</td>
+
+
+            
+
+
+            <td>
+                <button (click) = "updateBookRooms(user.roomId)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteBookRooms(user.roomId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "BookRooms(user.roomId)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
